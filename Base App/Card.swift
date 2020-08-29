@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct Card {
+struct Card: Identifiable {
     
+    var id: Int
     var content: String
     var isChosen = false
     var isMatched = false
     
-    init(content: String) {
+    init(id: Int, content: String) {
+        self.id = id
         self.content = content
     }
 }

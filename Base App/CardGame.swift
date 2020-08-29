@@ -7,16 +7,18 @@
 
 import Foundation
 
-class CardGame {
+class CardGame: ObservableObject {
     
-    var currentChosenCard: Card?
+    @Published var cards: Array<Card> = []
     
-    var cards: Array<Card> = []
+    var indexCount = -1
     
     init(emojis: [String]) {
         for emoji in emojis {
-            cards.append(Card(content: emoji))
-            cards.append(Card(content: emoji))
+            self.indexCount = indexCount + 1
+            cards.append(Card(id: indexCount, content: emoji))
+            self.indexCount = indexCount + 1
+            cards.append(Card(id: indexCount, content: emoji))
         }
         self.shuffleCards()
     }
@@ -25,14 +27,8 @@ class CardGame {
         return cards[Int.random(in: 0..<cards.count)]
     }
     
-    func chooseCard(card: Card) {
-        if currentChosenCard != nil {
-            if currentChosenCard!.content == card.content {
-                
-            } else {
-                
-            }
-        }
+    func chooseCard(selectedIndex: Int) {
+        self.cards[selectedIndex].isChosen = !self.cards[selectedIndex].isChosen
     }
     
     private func shuffleCards() {
@@ -49,6 +45,21 @@ class CardGame {
         print("---------------")
         for card in self.cards {
             print(card.content)
+        }
+    }
+    
+    // UI Stuff
+    
+    var currentCardIndex = 0
+    
+    func getNextCard() -> Card {
+        if currentCardIndex != cards.count {
+            let nextCard = cards[currentCardIndex]
+            currentCardIndex = currentCardIndex + 1
+            return nextCard
+        } else {
+            currentCardIndex = 0
+            return cards[currentCardIndex]
         }
     }
     
