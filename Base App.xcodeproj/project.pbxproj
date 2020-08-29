@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8521378324FA5C490077B61D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8521378224FA5C490077B61D /* Card.swift */; };
+		8521378524FA5CF10077B61D /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8521378424FA5CF10077B61D /* CardGame.swift */; };
 		8558D4FF24FA1F6D00902B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8558D4FE24FA1F6D00902B91 /* AppDelegate.swift */; };
 		8558D50124FA1F6D00902B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8558D50024FA1F6D00902B91 /* SceneDelegate.swift */; };
 		8558D50324FA1F6D00902B91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8558D50224FA1F6D00902B91 /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8521378224FA5C490077B61D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8521378424FA5CF10077B61D /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
 		8558D4FB24FA1F6D00902B91 /* Base App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8558D4FE24FA1F6D00902B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8558D50024FA1F6D00902B91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				8558D50924FA1F6E00902B91 /* LaunchScreen.storyboard */,
 				8558D50C24FA1F6E00902B91 /* Info.plist */,
 				8558D50624FA1F6E00902B91 /* Preview Content */,
+				8521378224FA5C490077B61D /* Card.swift */,
+				8521378424FA5CF10077B61D /* CardGame.swift */,
 			);
 			path = "Base App";
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				8558D4FF24FA1F6D00902B91 /* AppDelegate.swift in Sources */,
 				8558D50124FA1F6D00902B91 /* SceneDelegate.swift in Sources */,
 				8558D50324FA1F6D00902B91 /* ContentView.swift in Sources */,
+				8521378324FA5C490077B61D /* Card.swift in Sources */,
+				8521378524FA5CF10077B61D /* CardGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let game = CardGame(emojis: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"])
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -22,7 +24,7 @@ struct PoornaCardRow: View {
     var body: some View {
         HStack {
             ForEach((1...4), id: \.self) { index in
-                PoornaCard(title: "Poorna")
+                PoornaCard(title: game.randomCard().content)
             }
         }.padding()
     }
